@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicomatic", "Magicomatic\Magicomatic.csproj", "{EBE6F46E-51EE-44E3-AC65-7C9CDD251926}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{B0BE6D95-158B-4865-90A2-EDF0EF4208DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicomatic.Modules.Collection", "Modules\Magicomatic.Modules.Collection\Magicomatic.Modules.Collection.csproj", "{151F2860-6A49-4E35-A014-BE022EF37561}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magicomatic.Core", "Magicomatic.Core\Magicomatic.Core.csproj", "{23F3A9D1-4202-40D2-A718-E18D894BE915}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBE6F46E-51EE-44E3-AC65-7C9CDD251926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE6F46E-51EE-44E3-AC65-7C9CDD251926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE6F46E-51EE-44E3-AC65-7C9CDD251926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE6F46E-51EE-44E3-AC65-7C9CDD251926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{151F2860-6A49-4E35-A014-BE022EF37561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{151F2860-6A49-4E35-A014-BE022EF37561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{151F2860-6A49-4E35-A014-BE022EF37561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{151F2860-6A49-4E35-A014-BE022EF37561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23F3A9D1-4202-40D2-A718-E18D894BE915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23F3A9D1-4202-40D2-A718-E18D894BE915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23F3A9D1-4202-40D2-A718-E18D894BE915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23F3A9D1-4202-40D2-A718-E18D894BE915}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{151F2860-6A49-4E35-A014-BE022EF37561} = {B0BE6D95-158B-4865-90A2-EDF0EF4208DF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {934B4608-C09D-431A-9F9F-7EAFEAD19FFC}
+	EndGlobalSection
+EndGlobal
