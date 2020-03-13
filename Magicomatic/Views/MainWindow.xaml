@@ -4,8 +4,22 @@
         xmlns:prism="http://prismlibrary.com/"
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         prism:ViewModelLocator.AutoWireViewModel="True"
+        xmlns:core="clr-namespace:Magicomatic.Core;assembly=Magicomatic.Core"
         Title="{Binding Title}" Height="350" Width="525">
     <Grid>
-        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+        <TabControl>
+            <TabItem Header="Collection">
+                <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.CollectionRegion}" />
+            </TabItem>
+
+            <TabItem Header="Decks">
+                <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.DecksRegion}" />
+            </TabItem>
+            
+            <TabItem Header="Settings">
+                <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.SettingsRegion}" />
+            </TabItem>
+
+        </TabControl>
     </Grid>
 </Controls:MetroWindow>

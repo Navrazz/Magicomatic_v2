@@ -2,12 +2,12 @@
 using Prism.Ioc;
 using Prism.Modularity;
 using Magicomatic.Views;
+using Magicomatic.Modules.Collection;
+using Magicomatic.Modules.Settings;
+using Magicomatic.Modules.Decks;
 
 namespace Magicomatic
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App
     {
         protected override Window CreateShell()
@@ -18,6 +18,13 @@ namespace Magicomatic
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
 
+        }
+
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            moduleCatalog.AddModule<CollectionModule>();
+            moduleCatalog.AddModule<DecksModule>();
+            moduleCatalog.AddModule<SettingsModule>();
         }
     }
 }

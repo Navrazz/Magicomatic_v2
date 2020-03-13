@@ -1,6 +1,12 @@
-﻿using Prism.Mvvm;
+﻿using Prism.Commands;
+using Prism.Mvvm;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Magicomatic.Modules.Collection.ViewModels
+namespace Magicomatic.Modules.Decks.ViewModels
 {
     public class ViewAViewModel : BindableBase
     {
@@ -13,7 +19,7 @@ namespace Magicomatic.Modules.Collection.ViewModels
 
         public ViewAViewModel()
         {
-            Message = "View A from your Prism Module Collection";
+            Message = "View A from your Prism Module Decks";
         }
     }
 }

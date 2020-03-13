@@ -1,23 +1,23 @@
 ﻿using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
-using Magicomatic.Modules.Collection.Views;
+using Magicomatic.Modules.Settings.Views;
 using Magicomatic.Core;
 
-namespace Magicomatic.Modules.Collection
+namespace Magicomatic.Modules.Settings
 {
-    public class CollectionModule : IModule
+    public class SettingsModule : IModule
     {
         private readonly IRegionManager _regionManager;
 
-        public CollectionModule(IRegionManager regionManager)
+        public SettingsModule(IRegionManager regionManager)
         {
             _regionManager = regionManager;
         }
 
         public void OnInitialized(IContainerProvider containerProvider)
         {
-            _regionManager.RegisterViewWithRegion(RegionNames.CollectionRegion, typeof(ViewA));
+            _regionManager.RegisterViewWithRegion(RegionNames.SettingsRegion, typeof(ViewA));
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
